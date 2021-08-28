@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MediaItemComponent } from './media-item.component';
 
 @Component({
   selector: 'mw-app',
@@ -15,4 +16,7 @@ export class AppComponent {
     watchedOn: 1294166565384,
     isFavorite: false
   };
+
+  
+  onMediaItemDelete(mediaItem) {}
 }

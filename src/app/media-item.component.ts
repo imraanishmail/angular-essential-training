@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'mw-media-item',
@@ -7,8 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class MediaItemComponent {
   @Input() mediaItem;
+  // set property to event emitter object
+  // can pass in string value to @Output to Alias property. Only use when needed
+  @Output() delete = new EventEmitter();
 
   onDelete() {
-    console.log('deleted');
+    this.delete.emit(this.mediaItem);
   }
 }

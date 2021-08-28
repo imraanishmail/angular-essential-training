@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  //binding source
   firstMediaItem = {
     id: 1,
     name: 'Firebug',

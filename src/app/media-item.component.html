@@ -1,5 +1,6 @@
 <h2>{{ mediaItem.name }}</h2>
 <!-- Element to be ignored by DOM uses <ng-template> -->
+  <!-- Will check if MediaItem.watchedOn has a value -->
 <ng-template [ngIf]="mediaItem.watchedOn">
   <!--can be used instead of <ng-template> -->
   <!-- <div *ngIf="mediaItem.watchedOn">Watched on {{ mediaItem.watchedOn }}</div> -->

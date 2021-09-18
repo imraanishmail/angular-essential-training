@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 export class MediaItemComponent {
   //binding target
   //name in parentheses is an alias, not recommended
-  //@Input('firstMediaItem') mediaItem
+  //@Input('mediaItemToWatch') mediaItem
   @Input() mediaItem;
 
   onDelete() {

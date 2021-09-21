@@ -11,7 +11,7 @@ import { MediaItemFormComponent } from './media-item-form.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   declarations: [
     AppComponent,

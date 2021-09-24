@@ -26,7 +26,7 @@ export class MediaItemFormComponent implements OnInit {
         Validators.pattern('[\\w\\-\\s\\/]+')
       ])),
       category: this.formBuilder.control(''),
-      year: this.formBuilder.control('', this.yearValidator),
+      year: this.formBuilder.control('', this.yearValidator)
     });
   }
 
